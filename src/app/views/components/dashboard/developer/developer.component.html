@@ -1,1 +1,112 @@
-<p>developer works!</p>
+<app-navbar></app-navbar>
+<div class="col-9">
+    <div class="container" *ngIf="tap===0">
+        <div class="d-flex flex-row bd-highlight my-3">
+            <h3 class="fs-3 text-secondary m-2" *ngIf="!titulochan">{{titulo}}1</h3>
+            <input type="text" class="form-control" *ngIf="titulochan" [(ngModel)]="nuevoTitulo">
+            <button class="btn btn-success btn-sm" (click)="cambiarTitulo()"
+                *ngIf="!titulochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarTitulo()"
+                *ngIf="titulochan">guardar</button>
+        </div>
+
+        <div class="d-flex flex-row bd-highlight my-3">
+            <p class="text-dark m-2" *ngIf="!parrafochan">{{parrafo}}</p>
+            <input type="text" class="form-control" *ngIf="parrafochan" [(ngModel)]="nuevoParrafo">
+            <button class="btn btn-success btn-sm" (click)="cambiarParrafo()"
+                *ngIf="!parrafochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarParrafo()"
+                *ngIf="parrafochan">guardar</button>
+        </div>
+
+    </div>
+
+    <div class="container" *ngIf="tap===1">
+        <div class="d-flex flex-row bd-highlight my-3">
+            <h3 class="fs-3 text-secondary m-2" *ngIf="!titulochan">{{titulo}}2</h3>
+            <input type="text" class="form-control" *ngIf="titulochan" [(ngModel)]="nuevoTitulo">
+            <button class="btn btn-success btn-sm" (click)="cambiarTitulo()"
+                *ngIf="!titulochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarTitulo()"
+                *ngIf="titulochan">guardar</button>
+
+        </div>
+
+        <div class="d-flex flex-row bd-highlight my-3">
+            <p class="text-dark m-2" *ngIf="!parrafochan">{{parrafo}}</p>
+            <input type="text" class="form-control" *ngIf="parrafochan" [(ngModel)]="nuevoParrafo">
+            <button class="btn btn-success btn-sm" (click)="cambiarParrafo()"
+                *ngIf="!parrafochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarParrafo()"
+                *ngIf="parrafochan">guardar</button>
+        </div>
+
+    </div>
+
+    <div class="container" *ngIf="tap===2">
+        <div class="d-flex flex-row bd-highlight my-3">
+            <h3 class="fs-3 text-secondary m-2" *ngIf="!titulochan">{{titulo}}4</h3>
+            <input type="text" class="form-control" *ngIf="titulochan" [(ngModel)]="nuevoTitulo">
+            <button class="btn btn-success btn-sm" (click)="cambiarTitulo()"
+                *ngIf="!titulochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarTitulo()"
+                *ngIf="titulochan">guardar</button>
+
+        </div>
+
+        <div class="d-flex flex-row bd-highlight my-3">
+            <p class="text-dark m-2" *ngIf="!parrafochan">{{parrafo}}</p>
+            <input type="text" class="form-control" *ngIf="parrafochan" [(ngModel)]="nuevoParrafo">
+            <button class="btn btn-success btn-sm" (click)="cambiarParrafo()"
+                *ngIf="!parrafochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarParrafo()"
+                *ngIf="parrafochan">guardar</button>
+        </div>
+
+    </div>
+
+    <div class="container" *ngIf="tap===3">
+        <div class="d-flex flex-row bd-highlight my-3">
+            <h3 class="fs-3 text-secondary m-2" *ngIf="!titulochan">{{titulo}}5</h3>
+            <input type="text" class="form-control" *ngIf="titulochan" [(ngModel)]="nuevoTitulo">
+            <button class="btn btn-success btn-sm" (click)="cambiarTitulo()"
+                *ngIf="!titulochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarTitulo()"
+                *ngIf="titulochan">guardar</button>
+
+        </div>
+
+        <div class="d-flex flex-row bd-highlight my-3">
+            <p class="text-dark m-2" *ngIf="!parrafochan">{{parrafo}}</p>
+            <input type="text" class="form-control" *ngIf="parrafochan" [(ngModel)]="nuevoParrafo">
+            <button class="btn btn-success btn-sm" (click)="cambiarParrafo()"
+                *ngIf="!parrafochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarParrafo()"
+                *ngIf="parrafochan">guardar</button>
+        </div>
+
+    </div>
+
+    <div class="container" *ngIf="tap===4">
+        <div class="d-flex flex-row bd-highlight my-3">
+            <h3 class="fs-3 text-secondary m-2" *ngIf="!titulochan">{{titulo}}7</h3>
+            <input type="text" class="form-control" *ngIf="titulochan" [(ngModel)]="nuevoTitulo">
+            <button class="btn btn-success btn-sm" (click)="cambiarTitulo()"
+                *ngIf="!titulochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarTitulo()"
+                *ngIf="titulochan">guardar</button>
+
+        </div>
+
+
+        <div class="d-flex flex-row bd-highlight my-3">
+            <p class="text-dark m-2" *ngIf="!parrafochan">{{parrafo}}</p>
+            <input type="text" class="form-control" *ngIf="parrafochan" [(ngModel)]="nuevoParrafo">
+            <button class="btn btn-success btn-sm" (click)="cambiarParrafo()"
+                *ngIf="!parrafochan">cambiar</button>
+            <button class="btn btn-success btn-sm" (click)="guardarParrafo()"
+                *ngIf="parrafochan">guardar</button>
+        </div>
+
+    </div>
+</div>
